@@ -4,24 +4,33 @@
         <link rel="stylesheet" href="css/BusRideIcons.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="body">
         <div class= "dashboard">
             <div onclick="returnHome()">
                 <img class="logo" src="raw/logo.png" >
             </div>
             <div class="title">FindMyBus</div>
+            <div class="about_us">About Us</div>
+            <div class="login_or_sign_up">Login</div>
+            <div class="login_or_sign_up">SignUp/</div>
         </div>
         <div class="main">
             <div class="credentials">
-                <label for="fname">Email Address</label><br>
+                <div class="sign_in">
+                    Sign In
+                </div>
+                <label for="fname" class="input_label">Email Address</label><br>
                 <input type="text" id="femail" name="femail" class="input"><br>
-                <label for="lname">Password</label><br>
+                <label for="lname" class="input_label">Password</label><br>
                 <input type="text" id="lpassword" name="lpassword" class="input"><br><br>
                 <button class="login">Login</button>
-                <div class="no_account" onclick="returnHome()">
+                <div class="no_account" onclick="login()">
                     Don't have an account? sign up
                 </div>
             </div>  
