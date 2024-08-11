@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <title>busride</title>
+        <link rel="stylesheet" href="css/BusRideIcons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    </head>
+
+    <body>
+        <div class= "dashboard">
+            <div onclick="returnHome()">
+                <img class="logo" src="raw/logo.png" >
+            </div>
+            <div class="title">FindMyBus</div>
+        </div>
+        <div class="sign_up">
+            Sign Up
+        </div>
+        <div class="credentials">
+            <label for="fname">Name</label><br>
+            <input type="text" id="femail" name="femail" class="input"><br>
+            <label for="fname">Email Address</label><br>
+            <input type="text" id="femail" name="femail" class="input"><br>
+            <form action="/action_page.php">
+                <label for="role">Role:</label><br>
+                <select name="role" id="role" class="role">
+                  <option value="Student">Student</option>
+                  <option value="Admin">Admin</option>
+                </select>
+                <br><br>
+              </form>
+            <button onclick="navigateToPage()" class="login">Sign Up</button>
+        </div>  
+        <script>
+            function returnHome() {
+                // Specify the URL of the page you want to navigate to
+                window.location.href = "BusRide.html";
+            }
+
+            function login() {
+                // Specify the URL of the page you want to navigate to
+                window.location.href = "NewAccount.html";
+            }
+        </script>
+    </body>
+</html> 
