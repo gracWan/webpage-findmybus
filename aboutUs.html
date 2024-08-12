@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <title>busride</title>
+        <link rel="stylesheet" href="css/aboutUs.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="body">
+        <div class= "dashboard">
+            <div onclick="returnHome()">
+                <img class="logo" src="raw/logo.png" >
+            </div>
+            <div class="title">FindMyBus</div>
+            <div class="about_us" onclick="aboutUs()">About Us</div>
+            <div class="login_or_sign_up">Login</div>
+            <div class="login_or_sign_up">SignUp/</div>
+        </div>
+        <div class="description">
+            <p class="header">Who are we?</p>
+            <div class="information">
+                <img class="">
+                <div class="bio">
+                    <div class="name">
+                        Grace Wang
+                    </div><br>
+                    Rising junior going to Marjory Stoneman Douglas. 
+                </div>
+                <img class="">
+                <div class="bio">
+                    <div class="name">
+                        Emily Huang
+                    </div><br>
+                </div>
+            </div>
+            <p class="header">What we do?</p>
+        </div>
+        <script>
+            function returnHome() {
+                // Specify the URL of the page you want to navigate to
+                window.location.href = "BusRide.html";
+            }
+
+            function login() {
+                // Specify the URL of the page you want to navigate to
+                window.location.href = "NewAccount.html";
+            }
+
+            function aboutUs() {
+                // Specify the URL of the page you want to navigate to
+                window.location.href = "aboutUs.html";
+            }
+
+        </script>
+    </body>
+</html> 
