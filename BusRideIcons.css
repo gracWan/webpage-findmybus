@@ -3,10 +3,14 @@
     align-items: left;
     width:100%; 
     height:75px; 
-    background-color: #e9eff7;
+    background-color: #f1f6fc;
     border-bottom:solid;
-    border-color: grey;
-    
+    border-color: lightgrey;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-right:0px;
+    margin-left: 0px;
+    min-width:1100px;
 }
 
 .logo{
@@ -31,6 +35,23 @@
 .main{
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    display:flex;
+}
+
+.bus1{
+    width: fit-content;
+    height: fit-content;
+
+    float: left;
+    margin-top: 200px;
+}
+
+.bus2{
+    width: fit-content;
+    height: fit-content;
+    float: right;
+    margin-top: 200px;
 }
 
 .login{
@@ -84,26 +105,40 @@
     width: fit-content;
     border:solid; 
     border-color: lightgrey;
-    border-radius: 2px;
+    border-radius: 5px;
     border-width: 1.5px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    padding-top: 40px;
     float: center;
-    margin:auto; 
-    margin-top: 50px;
-    margin-bottom: 50px;
     font-weight: bolder;
     align-items: center;
     background-color: rgb(254, 255, 255);
-}
-
-.body{
-    background-color:rgb(245, 244, 244);
+    margin-top: 200px;
+    margin-bottom: 20px;
 }
 
 .no_account{
+    font-size: 15px;
+    color: #0084ff;
+    font-family: Calibri;
+    font-weight: none;
+    border:solid;
+    width:390px;
+    align-items: center;
+    float: center;
+    margin:auto; 
+    border-color: lightgray;
+    border-width: 1.5px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.forgot_password{
     font-size: 15px;
     color: #0084ff;
     font-family: Calibri;
