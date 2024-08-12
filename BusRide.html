@@ -16,24 +16,29 @@
                 <img class="logo" src="raw/logo.png" >
             </div>
             <div class="title">FindMyBus</div>
-            <div class="about_us">About Us</div>
+            <div class="about_us" onclick="aboutUs()">About Us</div>
             <div class="login_or_sign_up">Login</div>
             <div class="login_or_sign_up">SignUp/</div>
         </div>
         <div class="main">
+            <img class="bus1" src="raw/bus pt 1.png" >
             <div class="credentials">
                 <div class="sign_in">
-                    Sign In
+                    Login
                 </div>
                 <label for="fname" class="input_label">Email Address</label><br>
                 <input type="text" id="femail" name="femail" class="input"><br>
                 <label for="lname" class="input_label">Password</label><br>
                 <input type="text" id="lpassword" name="lpassword" class="input"><br><br>
                 <button class="login">Login</button>
-                <div class="no_account" onclick="login()">
-                    Don't have an account? sign up
-                </div>
+                <div class="forgot_password" onclick="forgotPassword()">
+                    Forgot password?
+                </div>      
             </div>  
+            <img class="bus2" src="raw/bus pt 2.png" >
+        </div>
+        <div class="no_account" onclick="login()">
+            Don't have an account? Sign up
         </div>
         <script>
             function returnHome() {
@@ -44,6 +49,16 @@
             function login() {
                 // Specify the URL of the page you want to navigate to
                 window.location.href = "NewAccount.html";
+            }
+
+            function aboutUs() {
+                // Specify the URL of the page you want to navigate to
+                window.location.href = "aboutUs.html";
+            }
+
+            function forgotPassword() {
+                // Specify the URL of the page you want to navigate to
+                window.location.href = "forgotPassword.html";
             }
         </script>
     </body>
